@@ -1,0 +1,231 @@
+body {
+    background: -webkit-gradient(linear, left top, left bottom, from(#c3e8ff), to(#ffffff));
+    background: -webkit-linear-gradient(#c3e8ff, #ffffff);
+    background: linear-gradient(#c3e8ff, #ffffff);
+    font-size: 14px;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+    margin: 0;
+    outline: none;
+}
+
+input[type="checkbox"] {
+    vertical-align: middle;
+    margin: 0;
+    outline: none;
+}
+
+label {
+    font-weight: lighter;
+}
+
+.tangency {
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: #f3f3f3;
+    position: relative;
+    top: 30px;
+}
+
+.tangency .tangency-display {
+    height: 450px;
+    background: #f3f3f3;
+}
+
+.tangency .tangency-item {
+    background: #fff;
+    -webkit-box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px black;
+    float: left;
+    margin: 30px 10px;
+    position: relative;
+}
+
+.tangency .tangency-item p {
+    margin: 0;
+}
+
+.tangency .tangency-item p:first-of-type {
+    position: absolute;
+    right: 4px;
+    bottom: 24px;
+    background: red;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.tangency .tangency-item p:last-of-type span {
+    position: absolute;
+    right: 4px;
+    bottom: 0;
+    background: green;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.tangency a {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+    height: 40px;
+}
+
+.tangency a:hover,
+.tangency a:visited {
+    border-bottom: 2px solid #000;
+}
+
+.tangency .active {
+    border-bottom: 2px solid #000;
+    z-index: 10;
+    position: relative;
+}
+
+.tangency .btn-toolbar {
+    border-top: 2px solid #ccc;
+    position: relative;
+    top: -2px;
+    padding-top: 30px;
+}
+
+.tangency .btn-toolbar a,
+.tangency .btn-toolbar button {
+    margin-right: 20px;
+    border-radius: 5px !important;
+}
+
+.tangency .btn-toolbar button {
+    background: #fff;
+}
+
+.unloadImage {
+    position: absolute;
+    z-index: 30;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 8px black;
+    box-shadow: 0 0 8px black;
+    display: none;
+}
+
+.unloadImage .menu-option {
+    font-size: .8rem;
+    line-height: 60px;
+    background: #f3f3f3;
+}
+
+.unloadImage .title-mark {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+    background: #f3f3f3;
+}
+
+.unloadImage .fileobject {
+    display: none;
+}
+
+.unloadImage .continueAddImage {
+    margin-top: 20px;
+    margin-left: 20px;
+    position: absolute;
+    display: none;
+}
+
+.unloadImage .select-option {
+    width: 200px;
+    height: 30px;
+}
+
+.unloadImage span {
+    padding: 0 10px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    color: blue;
+}
+
+.unloadImage .addimage {
+    height: 400px;
+    background: #fff;
+    position: relative;
+}
+
+.unloadImage .addimage .add-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.unloadImage .addimage .btn-upload-image {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+.createtangency {
+    position: absolute;
+    z-index: 33;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 100px;
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 4px black;
+    box-shadow: 0 0 4px black;
+    display: none;
+}
+
+.createtangency .tagcynemewarning p {
+    color: yellow;
+    font-weight: bold;
+    display: none;
+}
+
+.createtangency input[type="textarea"] {
+    width: 252px;
+    height: 52px;
+    vertical-align: top;
+}
+
+.createtangency input[type="text"] {
+    width: 252px;
+}
+
+.createtangency button {
+    float: right;
+    margin-left: 20px;
+}
+
+.createtangency .title-cteat,
+.createtangency .btn-color {
+    background: #f3f3f3;
+    line-height: 30px;
+    padding: 10px !important;
+}
+
+@media screen and (max-width: 450px) {
+    .image-display-area {
+        margin: 40px 20px;
+        height: 660px;
+    }
+    .unloadImage {
+        width: 400px;
+    }
+}
