@@ -1,0 +1,48 @@
+@media screen and (max-width:450px) {
+    .container {
+        background:#eee;
+    }
+}
+
+body {
+    font-family: 微软雅黑;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 30px 40px;
+    border: 1px solid #ccc;
+}
+
+.container .row div {
+    padding: 10px 0 !important;
+}
+
+.container .row input:not(.email) {
+    border: none;
+    width: 100%;
+}
+
+.container .row input[type="email"] {
+    background: #f3f3f3;
+    border-radius: 20px;
+    padding: 0 20px;
+    border: none;
+    width: 35%;
+}
+
+.container .row textarea {
+    text-indent: 2rem;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 300px;
+}
+
+.container .row select {
+    border: none;
+    appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+}

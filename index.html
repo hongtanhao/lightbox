@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>upload localImage</title>
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <!-- <link rel="stylesheet" type="text/css" href="styles/iconfont.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no">
+</head>
+
+<body>
+    <div class="container tangency">
+        <div class="row">
+            <div class="col-md-1"><a href="#" class="active">相册</a></div>
+            <div class="col-md-1"><a href="#" class="active">照片</a></div>
+            <div class="col-md-1"><a href="#" class="active">面孔墙</a></div>
+        </div>
+        <div class="row">
+            <div class="btn-toolbar">
+                <div class="btn-group main-button-list">
+                    <a class="btn btn-primary" href="#"><i class="icon-align-left"></i>上传照片</a>
+                    <a class="btn btn-primary" href="#"><i class="icon-align-center"></i>上传视频</a>
+                    <a class="btn btn-default">创建相册</a>
+                    <a class="btn btn-default">展示设置</a>
+                </div>
+            </div>
+        </div>
+        <div class="row tangency-display">
+            
+        </div>
+    </div>
+    <div class="container unloadImage">
+        <div class="row title-mark">
+            <div class="col-md-4">上传照片-普通上传</div>
+            <div class="col-md-offset-7 col-md-1"><span class="close">x</span></div>
+        </div>
+        <div class="row menu-option">
+            <div class="col-md-3">上传到
+                <select name="" id="" class="select-option">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+            </div>
+            <div class="col-md-4">照片尺寸：
+                <label>
+                    <input type="radio" value="普通">普通　</label>
+                <label>
+                    <input type="radio" value="高清">高清　</label>
+                <label>
+                    <input type="radio" value="原图">原图　</label><span>自定义水印</span></div>
+            <div class="col-md-１">
+                <div class="btn-group">
+                    <button class="btn">设置</button>
+                    <button class="btn dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>updown</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row addimage"><img src="images/addimage.png" id="add-image" class="add-image">
+        <img class="continueAddImage" src="images/continueAddImage.png" alt=""><img src="images/addimage.png" class="btn-upload-image" id="upload-image"><input class="fileobject" type="file"  name=""></div>
+    </div>
+    <div class="container createtangency"><div class="row title-cteat"><div class="col-md-4">创建相册</div><div class="col-md-offset-7 col-md-1"><span class="close">x</span></div></div>
+        <div class="row tagcyneme"><div class="col-md-3">相册名字：</div><div class="col-md-9"><label for=""><input id="tagName" type="text"><span>0</span>/30</label></div></div>
+        <div class="row "><div class="col-md-offset-3 col-md-9 tagcynemewarning"><p>相册名称不能为空，请先输入相册名</p></div></div>
+        <div class="row tagcyneme"><div class="col-md-3">相册描述：</div><div class="col-md-9"><label for=""><input type="textarea" placeholder="说说这个相册的故事"><span>0</span>/30</label></div></div>
+        <div class="row"><div class="col-md-3">　　主题：</div><div class="col-md-9"><input type="radio">普通　
+        <input type="radio">旅游　
+        <input type="radio">校友</div>
+        </div>
+        <div class="row"><div class="col-md-3">　　分类：</div><div class="col-md-9"><select name="" id="">
+            <option value="">人物</option>
+            <option value="">风景</option>
+            <option value="">动物</option>
+            <option value="">游记</option>
+            <option value="">生活</option>
+        </select></div></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-md-3">其它权限：</div><div class="col-md-8"><input type="checkbox">允许转载<br/><input type="checkbox">允许圈人</div>
+
+        </div>
+        <div class="row btn-color">
+            <div class="col-md-6"></div><div class="col-md-6"><button id="cancel" class="btn btn-default">取消</button><button id="sure" class="btn btn-primary">确认</button></div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/upload.js"></script>
+    <script type="text/javascript">
+        
+           // var mm = {nn:$('.container')};
+           // console.log(mm.nn);
+        
+    </script>
+
+</body>
